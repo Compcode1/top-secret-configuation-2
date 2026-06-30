@@ -71,7 +71,5 @@ Phase 2 transitions the pipeline from a flat state to an active security boundar
 
 ### Step 8: Data Tier Enforcement Binding
 The logical Microsoft Entra ID Conditional Access identity gate was physically bound to the target SharePoint Online site collection container by executing the SharePoint Online Management Shell cmdlet from an administrative workstation:
-```powershell
-Connect-SPOService -Url "[https://lab20250106-admin.sharepoint.com](https://lab20250106-admin.sharepoint.com)"
-Set-SPOSite -Identity "[https://lab20250106.sharepoint.com/sites/Important-Information-ABC](https://lab20250106.sharepoint.com/sites/Important-Information-ABC)" -ConditionalAccessPolicy AuthenticationContext -AuthenticationContextName "TopSecret-File-Gate"
+
 
